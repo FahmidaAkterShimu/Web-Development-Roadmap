@@ -1,0 +1,24 @@
+nav{
+    background-color:aquamarine;
+    height: 50px;
+    text-align: center;
+}
+nav li{
+    list-style: none;
+    display: inline;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+nav li:hover{
+    background-color:burlywood;
+    color: chocolate;
+}
+
+nav li a{
+    text-decoration: none;
+}
+
+footer{
+    text-align: center;
+}
