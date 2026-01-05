@@ -1,0 +1,40 @@
+ body{
+    max-width: 1140px;
+    background-color: antiquewhite;
+    margin: 0 auto;  
+}
+
+.hero-container{
+display: flex;
+gap:40px;
+align-items: center;
+background-color: aquamarine;
+border-radius: 20px;
+padding: 20px;
+font-size: 1.25em;
+}
+
+.hero-container p{
+    text-align: justify;
+}
+
+.hero-container button{
+    font-weight: bold;
+    color: blue;
+    background-color: aqua;
+    border: 2px solid blue;
+    border-radius: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+.hero-container button:hover{
+    background-color: turquoise;
+}
+
+.hero-container img{
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 3px rgb(148, 190, 241);
+ }
+
