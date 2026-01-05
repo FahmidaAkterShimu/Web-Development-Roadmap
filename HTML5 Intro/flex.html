@@ -6,46 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flex box</title>
     <style>
-        .container{
-            display:flex;
+        .container {
+            display: flex;
         }
-        .container div{
+
+        .container div {
             border: 2px solid tomato;
             width: 100%;
             height: 100px;
             font-size: 3em;
         }
-        .box-container{
+
+        .box-container {
             display: flex;
             gap: 50px;
         }
-        .box{
+
+        .box {
             font-size: 4em;
             height: 150px;
             width: 100px;
             border: 2px solid blue;
         }
-        .user-container{
+
+        .user-container {
             display: flex;
-            justify-content:space-around;
+            justify-content: space-around;
         }
-        .user{
+
+        .user {
             border: 2px solid blue;
             height: 200px;
             width: 200px;
             font-size: 3em;
-            background-color:aqua;
+            background-color: aqua;
         }
-        .card-container{
+
+        .card-container {
             display: flex;
             flex-wrap: wrap;
             gap: 20px;
         }
-        
     </style>
+    <link rel="stylesheet" href="styles/nav.css">
 </head>
 
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="center.html">Center</a></li>
+                <li><a href="flex.html">Flex</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="form.html">Form</a></li>
+                <li><a href="auto.html">Margin Auto</a></li>
+            </ul>
+        </nav>
+    </header>
     <div class="container">
         <div>1</div>
         <div>2</div>
@@ -65,11 +83,11 @@
     </div>
     <div class="user-container">
         <!-- .user{user-$}*6 -->
-         <div class="user">user-1</div>
-         <div class="user">user-2</div>
-         <div class="user">user-3</div>
+        <div class="user">user-1</div>
+        <div class="user">user-2</div>
+        <div class="user">user-3</div>
     </div>
-    
+
     <div class="card-container">
         <div class="user">user-1</div>
         <div class="user">user-2</div>
@@ -89,7 +107,7 @@
         <div class="user">user-16</div>
         <div class="user">user-17</div>
     </div>
-.user{$}
+    .user{$}
 
 </body>
 
