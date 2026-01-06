@@ -276,3 +276,7 @@ form input,textarea{
     padding: 18px 30px;
     margin-bottom: 24px;
 }
+
+.form input[type="submit"]{
+    width: 150px;
+}
