@@ -48,12 +48,15 @@
     margin-bottom: 30px;
 }
 
+.text-center{
+    text-align: center;
+}
 
 /* Main Style */
 header{
     padding-top: 50px;
     background: url(../images/developer.png), url(../images/header_bg.png);
-    background-position: top left, bottom right;
+    background-position: 23px  38px, bottom right;
     background-repeat: no-repeat;
     background-color: #FFF8F3;
 }
@@ -190,7 +193,7 @@ nav .menu a{
 .resume-container{
     width: 71%;
     max-width: 140;
-    margin: 113px auto 0;
+    margin: 113px auto 50px;
     display: flex;
     gap: 24px;
 }
@@ -228,4 +231,48 @@ nav .menu a{
     font-size: 16px;
     line-height: 28px;
     color:#757575;
+}
+
+footer{
+    margin-top: 113px;
+    padding: 130px;
+    background-color:#FFF8F3;
+}
+
+.footer-container{
+    width: 71%;
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    gap: 117px;
+}
+
+.footer-container h2{
+    color: #181818;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.sosial{
+    max-width: 562px;
+}
+
+.footer-container p{
+    font-size: 16px;
+    line-height: 28px;
+    color: #474747;
+    margin-bottom: 30px;
+}
+
+.footer-container .icons a{
+    margin-right: 24px;
+}
+
+form input,textarea{
+    color: #757575;
+    width: 461px;
+    border: none;
+    border-radius: 5px;
+    padding: 18px 30px;
+    margin-bottom: 24px;
 }
