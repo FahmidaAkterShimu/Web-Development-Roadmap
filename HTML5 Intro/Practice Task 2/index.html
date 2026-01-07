@@ -12,31 +12,40 @@
             padding-bottom: 5px;
         }
 
-        h2 {
+        h1{
+            color: crimson;
             text-align: center;
+        }
+
+        button{
+            width: 80px;
+            height: 30px;
+            text-align: center;
+            border-radius: 5px;
+            cursor: pointer;
         }
     </style>
 </head>
 
 <body>
     <header>
-        <h2>Storytelling Contest</h2>
+        <h1>Storytelling Contest</h1>
     </header>
     <main>
         <form>
             <fieldset>
-                <label for="">Share Your Story:</label>
-                <textarea name="" id="" cols="50" rows="5"></textarea>
-                <br> <br>
-                <button>Submit</button>
-
-                <label for="rate">Rate the Stories:</label>
+                <label for="comment"><h3>Share Your Story:</h3></label>
+                <textarea id="comment" cols="50" rows="5"></textarea>
+                
+                <label for="rate"><h3>Rate the Stories:</h3></label>
                 <select name="rate" id="rate">
                     <option value="good">Good</option>
                     <option value="Excellent">Excellent</option>
                     <option value="Bad">Bad</option>
                     <option value="Worst">Worst</option>
                 </select>
+                <br><br>
+                <button>Submit</button>
             </fieldset>
         </form>
     </main>
