@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positions</title>
+    <style>
+        .pic-container{
+            position: relative;
+            border: 3px solid peru;
+        }
+
+        .box{
+            border: 4px dotted plum;
+        }
+        /* .hdphn{
+            position: relative;
+            left: 50px;
+            top: 30px;
+            bottom: -20px;
+        } */
+
+        /* .hdphn{
+            position: absolute;
+            left: 50px;
+            top: 20px;
+        } */
+
+        /* .sunset{
+            position: sticky;
+            top: 0px;
+        } */
+
+        .sunset{
+            position: fixed;
+            top: 200px;
+            left: 100px;
+        }
+
+        .dummy{
+            border: 4px solid tomato;
+            width: 200px;
+            height: 200px;
+        }
+        
+        .another{
+            border: 4px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <h3>CSS Positions</h3>
+    <ol>
+        <!-- Flow related -->
+        <li>Static</li>
+        <li>Relative</li>
+        <li>Absolute</li>
+        <!-- Scroll related -->
+        <li>Fixed</li>
+        <li>Sticky</li>
+    </ol>
+    
+    <div class="pic-container">
+        <div class="box hdphn">
+            <img src="hdphn.jpg" alt="">
+        </div>
+        <div class="box pc">
+            <img src="pc.jpg" alt="">
+        </div>
+        <div class="box sunset">
+            <img src="sunset.avif" alt="">
+        </div>
+
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+    </div>
+
+    <div class="another">
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+    </div>
+</body>
+</html>

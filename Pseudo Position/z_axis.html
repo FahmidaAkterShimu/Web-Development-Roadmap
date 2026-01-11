@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-axis</title>
+    <style>
+        .box{
+            position: relative;
+        }
+        .pc{
+            top: -700px;
+            z-index: 1;
+        }
+
+        .hdphn{
+            top: 500px;
+            z-index: 2;
+        }
+
+        .sunset{
+            bottom: 2200px;
+            left: 1600px;
+            z-index: 3;
+        }
+
+    </style>
+</head>
+<body>
+    <h3>Z index</h3>
+    <div class="pic-container">
+        <div class="box hdphn">
+            <img src="hdphn.jpg" alt="">
+        </div>
+        <div class="box pc">
+            <img src="pc.jpg" alt="">
+        </div>
+        <div class="box sunset">
+            <img src="sunset.avif" alt="">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+    <style>
+        h3::after{
+            content: '.pdf';
+            color: teal;
+            font-size: 20px;
+            background-color: yellow;
+        }
+
+        h3::before{
+            content: 'start: ';
+            color: rgb(3, 41, 41);
+        }
+        p::first-letter{
+            font-size: 2em;
+            font-style: italic;
+        }
+        p::first-line{
+            background-color: aquamarine;
+        }
+        ::selection{
+            background-color: greenyellow;
+        }
+        input::placeholder{
+            color: rgb(103, 103, 230);
+        }
+    </style>
+</head>
+<body>
+    <h3>heading-1</h3>
+    <h3>heading-2</h3>
+    <h3>heading-3</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi saepe tempora atque iste ducimus accusamus reprehenderit mollitia numquam ab! Nemo.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis recusandae saepe, asperiores debitis officiis quam sapiente rem! Pariatur, voluptas tempora.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis recusandae saepe, asperiores debitis officiis quam sapiente rem! Pariatur, voluptas tempora.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis recusandae saepe, asperiores debitis officiis quam sapiente rem! Pariatur, voluptas tempora.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ducimus facilis sunt natus perferendis porro magnam, quibusdam facere! Eos, nemo!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis recusandae saepe, asperiores debitis officiis quam sapiente rem! Pariatur, voluptas tempora.</p>
+    <input type="text" name="" id="" placeholder="Your name">
+</body>
+</html>
