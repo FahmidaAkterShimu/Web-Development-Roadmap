@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Intro to Tailwind CSS</title>
+</head>
+<body>
+    <h1 class="font-sans text-7xl">Intro to Tailwind</h1>
+    <h3 class="text-4xl">Exploring CSS via Utility Class</h3>
+    <p class="underline">This is exciting</p>
+    <p class="border">This is exciting</p>
+    <p class="">This is exciting</p>
+    <p class="border-3 border-blue-400">This is exciting</p>
+    <p class="bg-red-400">This is exciting</p>
+    <p class="text-center font-bold bg-linear-to-bl from-violet-500 to-fuchsia-500">I am exploring tailwind</p>
+    <section class="max-w-7xl mx-auto border">
+        <h3>My section title</h3>
+        <h3 class="text-3xl border my-4">My section title</h3>
+        <p class="border py-13 text-green-800 font-bold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati expedita qui est sit amet officiis, voluptate distinctio aliquid eum consequatur, assumenda impedit earum mollitia enim velit dignissimos ea blanditiis voluptatum?</p>
+    </section>
+
+    <!-- Responsive section -->
+     <section class="bg-red-300 md:bg-green-300 lg:bg-yellow-200">
+        <h3 class="text-3xl">My Responsive section</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione repellendus accusamus officia praesentium rerum, harum dolor nesciunt! Dolore officia quis aliquid labore omnis, eaque odio! Explicabo ducimus error numquam ratione.</p>
+     </section>
+
+     <!-- flex layout -->
+      <section class="lg:flex">
+          <div class="w-96 h-32 text-3xl text-center bg-purple-400 border border-4 border-red-700">Item-1</div>
+          <div class="w-96 h-32 text-3xl text-center bg-purple-400 border border-4 border-red-700">Item-2</div>
+          <div class="w-96 h-32 text-3xl text-center bg-purple-400 border border-4 border-red-700">Item-3</div>
+          <div class="w-96 h-32 text-3xl text-center bg-purple-400 border border-4 border-red-700">Item-4</div>
+        </section>
+
+        <section class="flex justify-around">
+            <div class="w-24 h-32 text-3xl text-center bg-purple-400 border border-4 border-red-700">Item-11</div>
+            <div class="w-24 h-32 text-3xl text-center bg-purple-400 border border-4 border-red-700">Item-12</div>
+            <div class="w-24 h-32 text-3xl text-center bg-purple-400 border border-4 border-red-700">Item-13</div>
+        </section>
+
+        <!-- grid section -->
+         <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-3 gap-y-8 text-center">
+            <div class="bg-pink-300 text-2xl">box-1</div>
+            <div class="bg-pink-300 text-2xl">box-3</div>
+            <div class="bg-pink-300 text-2xl">box-4</div>
+            <div class="bg-pink-300 text-2xl">box-2</div>
+            <div class="lg:col-span-2 bg-pink-300 text-2xl">box-5</div>
+            <div class="bg-pink-300 text-2xl">box-6</div>
+            <div class="bg-pink-300 text-2xl">box-7</div>
+            <div class="xl:row-span-2 bg-pink-300 text-2xl">box-8</div>
+            <div class="bg-pink-300 text-2xl">box-9</div>
+            <div class="bg-pink-300 text-2xl">box-10</div>
+            <div class="bg-pink-300 text-2xl">box-11</div>
+            <div class="bg-pink-300 text-2xl">box-12</div>
+         </section>
+         <section>
+            <h3 class="text-4xl text-amber-600 bg-black">Some text</h3>
+         </section>
+</body>
+</html>
