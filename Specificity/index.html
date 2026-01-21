@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <style>
+        /* Id Selector */
+        #second {
+            color: green;
+        }
+
+        /* Universal */
+        * {
+            color: maroon;
+        }
+
+        /* Class selector */
+        .red {
+            color: red;
+        }
+
+        .purple {
+            color: purple;
+        }
+
+        /* Element */
+        h3 {
+            color: purple  !important;
+            color: blue;
+        }
+
+        h3 {
+            color: cadetblue;
+        }
+    </style>
+</head>
+
+<body>
+    <ol>
+        <li>"!important"</li>
+        <li>Inline CSS</li>
+        <li>Id Selector</li>
+        <li>Class Selector</li>
+        <li>Element</li>
+        <li>Universal</li>
+    </ol>
+
+    <h3>My Awesome Heading</h3>
+    <h3 style="color: orangered;" id="second" class="purple red">My Awesome Heading</h3>
+    <h3 class="purple red">My Awesome Heading</h3>
+    <h3>My Awesome Heading</h3>
+</body>
+
+</html>
