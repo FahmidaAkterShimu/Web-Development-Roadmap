@@ -11,7 +11,7 @@ Ticket fare Calculator
 let age = 60;
 let students = false;
 let ticketPrice = 800;
-var discount;
+let discount;
 
 if(age < 10){
     //Free
