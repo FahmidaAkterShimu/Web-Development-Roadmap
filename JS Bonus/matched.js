@@ -25,11 +25,11 @@ const products = [
 //     console.log(product);
 // }
 
-function matchedProducts(products, search){
+function matchedProducts(products, search) {
 
     const matched = [];
-    for(const product of products){
-        if(product.name.toLowerCase().includes(search.toLowerCase())){
+    for (const product of products) {
+        if (product.name.toLowerCase().includes(search.toLowerCase())) {
             matched.push(product);
         };
     }
