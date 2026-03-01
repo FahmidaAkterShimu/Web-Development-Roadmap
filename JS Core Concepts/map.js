@@ -40,5 +40,8 @@ const names = products.map((pd, index, productsArray) => {
     console.log(index, upperCaseName, productsArray);
     return upperCaseName;
 });
-
 console.log(names);
+
+
+const result = products.forEach(pd => console.log(pd.name));
+console.log(result);
