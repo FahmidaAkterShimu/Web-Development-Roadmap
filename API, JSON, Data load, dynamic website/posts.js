@@ -8,23 +8,31 @@ const loadPost = () => {
         });
 };
 
-// ----------------- Received Array of object -------------
-const displayPosts = ((posts) => {
-    // 1. get the container
-    const postContainer = document.getElementById("post-container");
-    postContainer.innerHTML = "";
+// {
+//     "userId": 10,
+//     "id": 94,
+//     "title": "qui qui voluptates illo iste minima",
+//     "body": "aspernatur expedita soluta quo ab ut similique\nexpedita dolores amet\nsed temporibus distinctio magnam saepe deleniti\nomnis facilis nam ipsum natus sint similique omnis"
+// }
 
-    // console.log(postContainer);
+const displayPosts = (posts) => {
+    // 1. get the container and empty the container
+
+    const postsContainer = document.getElementById("post-container");
+    postsContainer.innerHTML = "";
 
     posts.forEach((post) => {
-        // console.log(post.title);
 
-        // 2. create HTML Element
-        const li = document.createElement("li");
-        li.innerText = post.title;
-        // console.log(li);
-
-        // 3. add li into container
-        postContainer.appendChild(li);
+        // 2. create element
+        const postCard = document.createElement("div");
+        postCard.innerHTML = `
+        <div class="post-card">
+            <h2>${post.title}</h2>
+            <p>${post.body}</p>
+        </div>`;
+        // 3. add to the container
+        postsContainer.appendChild(postCard);
     });
-});
+};
+
+loadPost();
