@@ -20,6 +20,7 @@ const displayTodo = (todos) => {
     todos.forEach(todo => {
         console.log(todo)
 
+        // 2. create element 
         const todoCard = document.createElement("div");
         todoCard.innerHTML = `
         <div class="todo-card">
@@ -29,6 +30,8 @@ const displayTodo = (todos) => {
             <h4>${todo.title}</h4>
         </div>
         `;
+
+        // 3. add to the container
         todoContainer.append(todoCard);
     });
 };
