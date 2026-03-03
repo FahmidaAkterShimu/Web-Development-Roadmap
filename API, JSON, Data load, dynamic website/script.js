@@ -1,32 +1,24 @@
 const loadData = () => {
+
     fetch('https://jsonplaceholder.typicode.com/todos/1')
+        // Promise of response
         .then((response) => response.json())
+        // Promise of json data
         .then((data) => console.log(data));
-}
-
-
-/*
-console.log("Explore API");
-
-const person = {
-    name: "selim",
-    fruit: "dalim",
-    dish: "halim",
-    friends: ["alim", "kolim", "lamim"],
-    isRich: false,
-    money: 34000
 };
-console.log(person, typeof person);
 
-// JSON -> JS object with Notation
-// JSON.stringify -> JSON
+const loadPost = () => {
+    const url = "https://jsonplaceholder.typicode.com/posts";
+    fetch(url)
+        .then((res) => res.json())
+        .then(json => {
+            console.log(json);
+            displayPost(json);
+        });
+};
 
-// Object to JSON file
-const personJSON = JSON.stringify(person);
-console.log(personJSON, typeof personJSON);
-
-
-// JSON to Object
-const parseJSON = JSON.parse(personJSON);
-console.log(parseJSON);
-*/
+const displayPost = (posts) => {
+    posts.forEach(post => {
+        console.log(post);
+    })
+};
