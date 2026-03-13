@@ -2,9 +2,11 @@ import './App.css'
 import ToDo from './Todo';
 import Actor from './Actor';
 import Singer from './Singer'
+import Library from './library';
+
 
 function App() {
-  const actors = ['Bappa', 'Sunny', 'Salman', 'Jasim'];
+  // const actors = ['Bappa', 'Sunny', 'Salman', 'Jasim'];
 
   const singers = [
     { id: 1, name: 'Dr. Mahfuz', age: 68 },
@@ -12,11 +14,21 @@ function App() {
     { id: 3, name: 'Shuvro Deb', age: 57 }
   ];
 
+  const books = [
+    { id: 1, name: "Physics", price: 250 },
+    { id: 2, name: "Chemistry", price: 350 },
+    { id: 3, name: "Biology", price: 255 },
+    { id: 4, name: "Math", price: 250 },
+    { id: 5, name: "HigherMath", price: 290 },
+  ];
+
   // const time = 50;
 
   return (
     <>
       <h1>React Core Concepts</h1>
+
+      <Library books={books}></Library>
 
       {
         singers.map(singer => <Singer key={singer.id} singerName={singer.name} singerAge={singer.age} ></Singer>)
