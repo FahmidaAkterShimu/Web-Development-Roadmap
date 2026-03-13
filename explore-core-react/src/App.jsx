@@ -1,10 +1,24 @@
 import './App.css'
+import ToDo from './Todo';
 
 function App() {
+
+  const time = 50;
+
   return (
     <>
       <h1>React Core Concepts</h1>
-      <Student></Student>
+      <ToDo
+        task="Learn React"
+        isDone={true}
+        time={time}></ToDo>
+      <ToDo
+        task="Revise JS"
+        isDone={false}></ToDo>
+      <ToDo
+        task="Take a shower"
+        isDone={true}></ToDo>
+      {/* <Student></Student>
       <Student></Student>
       <Person></Person>
       <Developer name="Manush" tech="JS"></Developer>
@@ -15,13 +29,13 @@ function App() {
       <Device deviceName="Laptop" price="75000"></Device>
       <Player name="tamim" runs="5000"></Player>
       <Salami event="Rojar eid" amount="20"></Salami>
-      <Salami event="Graduation"></Salami>
+      <Salami event="Graduation"></Salami> */}
     </>
   )
 }
 
 
-function Salami(event, amount = 0) {
+function Salami({ event, amount = 0 }) {
   return (
     <div>
       <h3>Salami For: {event} </h3>
