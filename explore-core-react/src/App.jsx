@@ -13,9 +13,33 @@ function App() {
       <Device deviceName="Mobile" price="12000"></Device>
       <Device deviceName="Desktop" price="60000"></Device>
       <Device deviceName="Laptop" price="75000"></Device>
+      <Player name="tamim" runs="5000"></Player>
+      <Salami event="Rojar eid" amount="20"></Salami>
+      <Salami event="Graduation"></Salami>
     </>
   )
 }
+
+
+function Salami(event, amount = 0) {
+  return (
+    <div>
+      <h3>Salami For: {event} </h3>
+      <p>Amount: {amount} </p>
+    </div>
+  )
+}
+
+function Player({ name, runs }) {
+  return (
+    <div className='student'>
+      <h3>Name: {name}</h3>
+      <p>Runs: {runs} </p>
+    </div>
+  )
+}
+
+const { name, tech } = { name: 'Manush', tech: 'JS' }
 
 function Developer(props) {
   console.log(props);
