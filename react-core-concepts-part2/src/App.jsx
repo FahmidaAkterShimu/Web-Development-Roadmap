@@ -1,5 +1,7 @@
 import './App.css'
-import Counter from './Counter'
+import Counter from './Counter';
+import Batsman from './Batsman';
+import Users from './Users';
 
 function App() {
 
@@ -25,22 +27,21 @@ function App() {
         {/* <button onclick="handleClick()">Click Me</button> 
         */}
 
+        <Users></Users>
+
+        <Batsman></Batsman>
 
         <Counter></Counter>
 
         <button onClick={handleClick}>Click Me</button>
-        <br />
 
         <button onClick={function handleClick2() {
           alert('clicked 2')
         }}>Click Me2</button>
-        <br />
 
         <button onClick={handleClick3}>Click Me3</button>
-        <br />
 
         <button onClick={() => alert('clicked 4')} >Click Me4</button>
-        <br />
 
         <button onClick={() => handleAdd5(5)}>Click Add 5</button>
 
