@@ -1,4 +1,5 @@
 import './App.css'
+import Counter from './Counter'
 
 function App() {
 
@@ -21,7 +22,12 @@ function App() {
       <div>
 
         <h1>Get started</h1>
-        {/* <button onclick="handleClick()">Click Me</button> */}
+        {/* <button onclick="handleClick()">Click Me</button> 
+        */}
+
+
+        <Counter></Counter>
+
         <button onClick={handleClick}>Click Me</button>
         <br />
 
