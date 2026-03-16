@@ -5,6 +5,7 @@ import Users from './Users';
 import { Suspense } from 'react';
 import Friends from './Friends'
 import Posts from './Posts';
+import Players from './Players';
 
 const fetchUsers = fetch("https://jsonplaceholder.typicode.com/users").then(res => res.json())
 
@@ -47,8 +48,8 @@ function App() {
       <div>
 
         <h1>Get started</h1>
-        {/* <button onclick="handleClick()">Click Me</button> 
-        */}
+
+        <Players></Players>
 
         <Suspense fallback={<h4>Posts are coming...</h4>}>
           <Posts postsPromise={postsPromise}></Posts>
@@ -65,6 +66,9 @@ function App() {
         </Suspense>
 
         <Counter></Counter>
+
+        {/* <button onclick="handleClick()">Click Me</button> 
+        */}
 
         <button onClick={handleClick}>Click Me</button>
 
