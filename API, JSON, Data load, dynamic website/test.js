@@ -7,3 +7,5 @@ const data = async () => {
 };
 
 data();
+
+const arrow = (a,a,a) => console.log(a);
