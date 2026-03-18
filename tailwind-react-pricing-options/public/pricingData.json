@@ -9,14 +9,14 @@
             "Locker facility",
             "Open gym hours (9am - 5pm)",
             "Free water station",
-            "Basic workout guidance",
-            "Mobile app access"
+            "Basic workout guidance"
         ]
     },
     {
         "id": 2,
         "name": "Standard Plan",
         "price": "$40",
+        "popular": true,
         "duration": "month",
         "features": [
             "All Basic features",

@@ -19,8 +19,8 @@ function App() {
       </header>
       <main>
         <Suspense fallback={<span className="loading loading-spinner loading-lg"></span>}>
-        
-        <PricingOptions pricingPromise={pricingPromise}></PricingOptions>
+
+          <PricingOptions pricingPromise={pricingPromise}></PricingOptions>
         </Suspense>
 
       </main>

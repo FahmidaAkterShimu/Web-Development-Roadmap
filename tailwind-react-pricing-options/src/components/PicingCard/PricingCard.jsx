@@ -5,7 +5,7 @@ const PricingCard = ({ pricing }) => {
     const { name, price, duration, features } = pricing;
 
     return (
-        <div className='border bg-blue-600 rounded-2xl p-4'>
+        <div className='flex flex-col border bg-blue-600 rounded-2xl p-4'>
             {/* card header */}
             <div>
                 <h1 className='text-7xl'>{name}</h1>
@@ -13,7 +13,7 @@ const PricingCard = ({ pricing }) => {
             </div>
 
             {/* card body */}
-            <div className='bg-blue-400 rounded-2xl p-4 mt-10'>
+            <div className='bg-blue-400 rounded-2xl p-4 mt-10 flex-1'>
                 <p className='text-2xl font-semibold text-blue-700'>Duration: {duration}</p>
 
                 {
@@ -22,6 +22,7 @@ const PricingCard = ({ pricing }) => {
                         feature={feature}></PricingFeature>)
                 }
             </div>
+            <button className="btn w-full rounded-xl mt-8">Subscribe</button>
         </div>
     );
 };
