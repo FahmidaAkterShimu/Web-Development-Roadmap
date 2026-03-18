@@ -1,0 +1,45 @@
+[
+    {
+        "id": 1,
+        "name": "Basic Plan",
+        "price": 20,
+        "duration": "month",
+        "features": [
+            "Access to gym equipment",
+            "Locker facility",
+            "Open gym hours (9am - 5pm)",
+            "Free water station",
+            "Basic workout guidance",
+            "Mobile app access"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Standard Plan",
+        "price": 40,
+        "duration": "month",
+        "features": [
+            "All Basic features",
+            "Group classes (Yoga, Cardio, Zumba)",
+            "Extended hours (7am - 9pm)",
+            "1 personal training session/week",
+            "Body composition analysis",
+            "Access to steam room"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Premium Plan",
+        "price": 70,
+        "duration": "month",
+        "features": [
+            "All Standard features",
+            "Unlimited personal training",
+            "Customized diet & nutrition plan",
+            "24/7 gym access",
+            "Sauna & spa access",
+            "Priority support",
+            "Guest pass (2 per month)"
+        ]
+    }
+]
