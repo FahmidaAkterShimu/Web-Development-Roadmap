@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "Basic Plan",
-        "price": 20,
+        "price": "$20",
         "duration": "month",
         "features": [
             "Access to gym equipment",
@@ -16,7 +16,7 @@
     {
         "id": 2,
         "name": "Standard Plan",
-        "price": 40,
+        "price": "$40",
         "duration": "month",
         "features": [
             "All Basic features",
@@ -30,7 +30,7 @@
     {
         "id": 3,
         "name": "Premium Plan",
-        "price": 70,
+        "price": "$70",
         "duration": "month",
         "features": [
             "All Standard features",
