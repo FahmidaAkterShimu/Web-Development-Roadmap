@@ -1,16 +1,24 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { Link, useNavigate } from 'react-router';
 
 const Post = ({ post }) => {
     const { id, title } = post;
+    const navigate = useNavigate();
+
+    const handleNavigate = () => {
+        navigate(`/posts/${id}`)
+    }
+
     return (
-        <div style={{ border: '2px solid purple'}}>
+        <div style={{ border: '2px solid purple' }}>
             <h2>Title: {title}</h2>
             <Link to={`/posts/${id}`}>
                 <button>
                     Show Details
                 </button>
             </Link>
+            <br />
+            <button onClick={handleNavigate}>Details of: {id}</button>
         </div>
     );
 };
