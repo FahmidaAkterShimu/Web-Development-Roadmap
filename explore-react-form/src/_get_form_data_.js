@@ -9,6 +9,9 @@
 //     name: '',
 //     password: '',
 //     phone: '',
-// }) 
+// })
 
 // 4. Uncontrolled using useRef
+
+
+// 5. Hook Form
