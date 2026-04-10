@@ -49,7 +49,7 @@ const BlogsPage = () => {
                 blogs.map(blog =>
                     <div key={blog.id}>
                         <h3 className='text-2xl font-bold mb-2'>{blog.title}</h3>
-                        <Link href="/">Show details</Link>
+                        <Link href={`/blogs/${blog.id}`}>Show details</Link>
                     </div>
                 )
             }
