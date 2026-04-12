@@ -1,22 +1,34 @@
+import Image from "next/image";
+import Link from "next/link";
+
 const FoodCard = ({ food }) => {
-    const { dish_name } = food
+    const { id, dish_name, image_link, category, rating, price, cuisine, origin_and_popularity } = food
 
     return (
         <div className="card bg-base-100 shadow-sm">
-            {/* <figure>
-                <img
-                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                    alt="Shoes" />
-            </figure> */}
+            <figure>
+                <Image
+                    src={image_link}
+                    alt={dish_name}
+                    width={300}
+                    height={300} />
+            </figure>
             <div className="card-body">
                 <h2 className="card-title">
                     {dish_name}
-                    <div className="badge badge-secondary">NEW</div>
+                    <div className="badge badge-secondary">{rating}</div>
                 </h2>
-                <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                <p>Category: {category}</p>
+                <p className="text-lg font-bold text-green-400">Price: ${price}</p>
+                <p>Cuisine: {cuisine}</p>
+                <p>Origin and Popularity: {origin_and_popularity}</p>
                 <div className="card-actions justify-end">
-                    <div className="badge badge-outline">Fashion</div>
-                    <div className="badge badge-outline">Products</div>
+
+                    <button className="btn btn-success rounded-2xl">Add to Cart</button>
+
+                    <Link href={`/foods/${id}`}>
+                        <button className="btn btn-info rounded-2xl">Show Details</button>
+                    </Link>
                 </div>
             </div>
         </div>
