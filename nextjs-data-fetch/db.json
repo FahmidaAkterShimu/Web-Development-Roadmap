@@ -1,0 +1,59 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Wireless Headphones",
+      "brand": "Sony",
+      "price": 120,
+      "category": "Electronics",
+      "stock": 25,
+      "rating": 4.5,
+      "image": "https://images.unsplash.com/photo-1518441902112-7b8c7c9f8d57",
+      "description": "High-quality wireless headphones with noise cancellation."
+    },
+    {
+      "id": 2,
+      "name": "Smart Watch",
+      "brand": "Apple",
+      "price": 350,
+      "category": "Wearables",
+      "stock": 15,
+      "rating": 4.7,
+      "image": "https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b",
+      "description": "Track your fitness and stay connected with this smart watch."
+    },
+    {
+      "id": 3,
+      "name": "Gaming Mouse",
+      "brand": "Logitech",
+      "price": 60,
+      "category": "Accessories",
+      "stock": 40,
+      "rating": 4.6,
+      "image": "https://images.unsplash.com/photo-1587202372775-989bdb6c1d16",
+      "description": "Ergonomic gaming mouse with customizable RGB lighting."
+    },
+    {
+      "id": 4,
+      "name": "Laptop Backpack",
+      "brand": "HP",
+      "price": 45,
+      "category": "Bags",
+      "stock": 30,
+      "rating": 4.3,
+      "image": "https://images.unsplash.com/photo-1526178613658-3f1622045557",
+      "description": "Durable backpack with padded laptop compartment."
+    },
+    {
+      "id": 5,
+      "name": "Bluetooth Speaker",
+      "brand": "JBL",
+      "price": 80,
+      "category": "Audio",
+      "stock": 20,
+      "rating": 4.4,
+      "image": "https://images.unsplash.com/photo-1585386959984-a4155224a1b8",
+      "description": "Portable Bluetooth speaker with powerful bass and long battery life."
+    }
+  ]
+}
