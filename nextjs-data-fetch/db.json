@@ -26,7 +26,7 @@
       "id": 3,
       "name": "Gaming Mouse",
       "brand": "Logitech",
-      "price": 60,
+      "price": 600,
       "category": "Accessories",
       "stock": 40,
       "rating": 4.6,
@@ -46,7 +46,7 @@
     },
     {
       "id": 5,
-      "name": "Bluetooth Speaker",
+      "name": "Bluetooth Mouse",
       "brand": "JBL",
       "price": 80,
       "category": "Audio",

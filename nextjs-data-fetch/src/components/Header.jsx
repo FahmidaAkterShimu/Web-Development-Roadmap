@@ -4,6 +4,7 @@ const Header = () => {
     const links = <>
         <li><Link href="/">Home</Link></li>
         <li><Link href="/posts">Post</Link></li>
+        <li><Link href="/products">Products</Link></li>
     </>
 
     return (
