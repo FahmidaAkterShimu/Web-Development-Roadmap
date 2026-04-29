@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "title": "Complete Next.js assignment",
+        "description": "Finish SSR, SSG, and ISR explanation task",
+        "status": "pending",
+        "priority": "high",
+        "due_date": "2026-05-02"
+    },
+    {
+        "id": 2,
+        "title": "Build portfolio website",
+        "description": "Create personal portfolio using Next.js and Tailwind CSS",
+        "status": "in-progress",
+        "priority": "high",
+        "due_date": "2026-05-10"
+    },
+    {
+        "id": 3,
+        "title": "Fix hydration error",
+        "description": "Resolve SSR hydration mismatch issue in React app",
+        "status": "completed",
+        "priority": "medium",
+        "due_date": "2026-04-25"
+    },
+    {
+        "id": 4,
+        "title": "Learn API integration",
+        "description": "Practice fetching data from REST APIs in Next.js",
+        "status": "pending",
+        "priority": "medium",
+        "due_date": "2026-05-05"
+    },
+    {
+        "id": 5,
+        "title": "Design dashboard UI",
+        "description": "Create responsive admin dashboard layout",
+        "status": "in-progress",
+        "priority": "high",
+        "due_date": "2026-05-08"
+    },
+    {
+        "id": 6,
+        "title": "Study React hooks",
+        "description": "Revise useState, useEffect, useContext",
+        "status": "completed",
+        "priority": "low",
+        "due_date": "2026-04-20"
+    },
+    {
+        "id": 7,
+        "title": "Deploy project",
+        "description": "Deploy Next.js app on Vercel",
+        "status": "pending",
+        "priority": "high",
+        "due_date": "2026-05-12"
+    },
+    {
+        "id": 8,
+        "title": "Write blog post",
+        "description": "Explain SSR vs SSG vs ISR in simple words",
+        "status": "pending",
+        "priority": "low",
+        "due_date": "2026-05-15"
+    }
+]
