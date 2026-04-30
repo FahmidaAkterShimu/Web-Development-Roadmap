@@ -1,3 +1,4 @@
+import Addtask from '@/components/AddTask';
 import TasksCard from '@/components/TasksCard';
 import { getTasks } from '@/lib/tasks';
 import React from 'react';
@@ -7,8 +8,9 @@ const TasksPage = async () => {
 
     return (
         <div>
-            <h2 className='text-2xl font-bold text-center mb-5'>Tasks: {tasks.length}</h2>
-            <div className='grid grid-cols-3 gap-6 max-w-350 mx-auto'>
+            <h2 className='text-2xl font-bold text-center mb-4'>Tasks: {tasks.length}</h2>
+            <Addtask></Addtask>
+            <div className='grid grid-cols-3 gap-6 max-w-350 mx-auto pt-8'>
                 {
                     tasks.map(task => <TasksCard key={task.id} task={task}></TasksCard>)
                 }
