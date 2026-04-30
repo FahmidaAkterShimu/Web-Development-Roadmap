@@ -10,7 +10,9 @@ const TasksPage = async () => {
     return (
         <div>
             <h2 className='text-2xl font-bold text-center mb-4'>Tasks: {tasks.length}</h2>
-            <Addtask createATask={createATask}></Addtask>
+            <div className="flex justify-center items-center">
+                <Addtask createATask={createATask}></Addtask>
+            </div>
             <div className='grid grid-cols-3 gap-6 max-w-350 mx-auto pt-8'>
                 {
                     tasks.map(task => <TasksCard key={task.id} task={task}></TasksCard>)
