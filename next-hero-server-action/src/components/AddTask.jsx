@@ -6,7 +6,7 @@ import { Button, Input, Label, Modal, Surface, TextField, ListBox, Select } from
 const Addtask = ({ createATask }) => {
     return (
         <Modal>
-            <Button variant="primary">Add a Task</Button>
+            <Button variant="secondary">Add a Task</Button>
             <Modal.Backdrop>
                 <Modal.Container placement="auto">
                     <Modal.Dialog className="sm:max-w-md">
@@ -89,7 +89,7 @@ const Addtask = ({ createATask }) => {
                                         <Button slot="close" variant="secondary">
                                             Cancel
                                         </Button>
-                                        <Button type="submit">Submit Task</Button>
+                                        <Button slot="close" type="submit">Submit Task</Button>
                                     </Modal.Footer>
                                 </form>
                             </Surface>
