@@ -4,6 +4,7 @@ import { Check } from "@gravity-ui/icons";
 import { Button, Description, FieldError, Form, Input, Label, TextField } from "@heroui/react";
 
 const SignUpPage = () => {
+
     const onSubmit = async (e) => {
         e.preventDefault();
         const formData = new FormData(e.currentTarget);
@@ -15,9 +16,17 @@ const SignUpPage = () => {
             name: userData.name,
             email: userData.email,
             password: userData.password,
+            callbackURL: '/'
         });
 
-        console.log(data, error)
+        console.log("Sign up response:", data, error);
+
+        if(error){
+            alert("Error signing up: "+ error.message)
+        }
+        if(data){
+            alert("Sign up successful!")
+        }
     };
 
     return (
