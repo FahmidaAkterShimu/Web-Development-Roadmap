@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const cors = require('cors');
-const { MongoClient, ServerApiVersion } = require('mongodb')
+const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb')
 const port = process.env.PORT || 5000;
 
 app.use(cors());
@@ -24,9 +24,61 @@ const run = async () => {
         const db = client.db('SimpleCrud');
         const userCollection = db.collection('users');
 
+        // Read data
         app.get('/users', async (req, res) => {
             const cursor = userCollection.find();
             const result = await cursor.toArray();
+            res.send(result);
+        })
+
+        // Read/Get data
+        app.get('/users/:id', async (req, res) => {
+            const id = req.params.id;
+            const query = {
+                _id: new ObjectId(id)
+            }
+            const user = await userCollection.findOne(query);
+            console.log(id);
+            res.send(user);
+        })
+
+        // Create new data
+        app.post('/users', async (req, res) => {
+            const newUser = req.body;
+            console.log('user to be inserted', newUser)
+
+            const result = await userCollection.insertOne(newUser);
+            res.send(result);
+        })
+
+        // Update existing data
+        app.patch('/users/:id', async (req, res) => {
+            const id = req.params.id;
+            const filter = {
+                _id: new ObjectId(id)
+            }
+            const modifiedUser = req.body;
+
+            const updatedDocument = {
+                $set: {
+                    name: modifiedUser.name,
+                    email: modifiedUser.email,
+                    role: modifiedUser.role
+                }
+            }
+
+            const result = await userCollection.updateOne(filter, updatedDocument);
+
+            res.send(result);
+        })
+
+        // Delete data
+        app.delete('/users/:id', async (req, res) => {
+            const id = req.params.id;
+            const query = {
+                _id: new ObjectId(id)
+            }
+            const result = await userCollection.deleteOne(query);
             res.send(result);
         })
 
